@@ -1,0 +1,25 @@
+{
+  "name": "check-jquery",
+  "version": "0.0.1",
+  "description": "Check which jQuery version is attached",
+  "keywords": [],
+  "homepage": "https://github.com/samiahmedsiddiqui/check-jquery",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samiahmedsiddiqui/check-jquerypoc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/samiahmedsiddiqui/check-jquery/issues"
+  },
+  "author": "Sami Ahmed Siddiqui",
+  "private": true,
+  "scripts": {
+    "start": "node app.js",
+    "test": "node sitemap.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "jsdom": "^16.4.0",
+    "xml2js": "^0.4.23"
+  }
+}
