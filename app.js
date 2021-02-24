@@ -31,49 +31,20 @@ async function checkJquery(config) {
     process.exit();
   }
 
-  console.log(convertUrls)
-
-  /*
-  const afterConvert = config.afterConvert ? config.afterConvert : '';
-  const beforeConvert = config.beforeConvert ? config.beforeConvert : '';
-  const destinationPath = config.destination ? config.destination : 'build';
-  const htmlSelector = config.selector ? config.selector : '';
-  */
   const totalConversions = convertUrls.length;
 
+  var attachedScripts = [];
   var converting = 0;
   var conversionProgress = 0;
-  var conversionFailed = 0;
-  var failedList = {};
   var progressMsg = 'Converting: 0% (0/' + totalConversions + ')';
 
   printProgress(progressMsg);
-  /*
-  if (destinationPath && !fs.existsSync(destinationPath)) {
-    fs.mkdirSync(destinationPath, { recursive: true });
-  }
-  */
-
   for (const readUrl of convertUrls) {
     converting += 1;
     conversionProgress = ((converting / totalConversions) * 100).toFixed(0);
 
     const result = await checkPage(readUrl);
-    /*
-    if (!result || result !== 'passed') {
-      conversionFailed += 1;
-      if (result === 'failed') {
-        if (!failedList['others']) {
-          failedList['others'] = [];
-        }
-        failedList['others'].push(readUrl);
-      } else {
-        if (!failedList[result]) {
-          failedList[result] = [];
-        }
-        failedList[result].push(readUrl);
-      }
-    }*/
+    attachedScripts = Object.assign({}, attachedScripts, result);
 
     progressMsg = 'Converting: ' + conversionProgress + '% (' + converting + '/' + totalConversions + ')';
     if (converting === totalConversions) {
@@ -82,6 +53,14 @@ async function checkJquery(config) {
 
     printProgress(progressMsg);
   }
+
+  // Add empty line
+  console.log();
+
+  // Add empty line
+  console.log();
+
+  Object.values(attachedScripts).forEach(val => console.log(val));
 
   // Add empty line
   console.log();
