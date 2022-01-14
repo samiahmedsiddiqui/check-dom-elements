@@ -1,21 +1,24 @@
 {
-  "name": "check-jquery",
-  "version": "0.0.1",
+  "name": "check-dom-elements",
+  "version": "1.0.0",
   "description": "Check which jQuery version is attached",
-  "keywords": [],
-  "homepage": "https://github.com/samiahmedsiddiqui/check-jquery",
+  "keywords": [
+    "dom",
+    "dom-elements"
+  ],
+  "homepage": "https://github.com/samiahmedsiddiqui/check-dom-elements",
   "repository": {
     "type": "git",
-    "url": "https://github.com/samiahmedsiddiqui/check-jquery.git"
+    "url": "https://github.com/samiahmedsiddiqui/check-dom-elements.git"
   },
   "bugs": {
-    "url": "https://github.com/samiahmedsiddiqui/check-jquery/issues"
+    "url": "https://github.com/samiahmedsiddiqui/check-dom-elements/issues"
   },
   "author": "Sami Ahmed Siddiqui",
   "private": true,
   "scripts": {
-    "start": "node app.js",
-    "test": "node sitemap.js"
+    "test:used-scripts": "node test/list-of-used-scripts.js",
+    "test:target-blank-with-wrong-attributes": "node test/list-of-target-blank-with-wrong-attributes.js"
   },
   "dependencies": {
     "axios": "^0.21.0",
