@@ -46,3 +46,16 @@ npm run test:target-blank-with-wrong-attributes
 ```
 
 **NOTE:** This test returns the result of page URL(s) where anchor contains `target="_blank"` with wrong rel.
+
+## Parameters
+
+| Attributes |  Type  | Required | Default |                                                       Description                                                      |
+|:----------:|:------:|:--------:|:-------:|:----------------------------------------------------------------------------------------------------------------------:|
+|  sitemaps  |  Array |    Yes   |         | Sitemap(s) URL(s) where the actual site URL(s) needs to be fetched for DOM testing.                                    |
+|    urls    |  Array |    Yes   |         | URL(s) for which DOM testing needs to be performed.                                                                    |
+|    test    | String |    Yes   |         | Name of the test that needs to be run. If you are running tests that are listed in README then keep the name as it is. |
+|   options  | Object |    No    |   `{}`  | Define options like HTTP Auth credentials if the site is locked or headers etc.                                        |
+
+**NOTE:** `sitemaps` and/or `urls` is required. You can define both parameters
+as well to fetch URL(s) from sitemap and the URL(s) that are not listed in the
+sitemap, you can provide them separately.

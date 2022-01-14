@@ -16,7 +16,7 @@ async function checkJquery(config) {
     config.options = {};
   }
 
-  if (config.sitemap) {
+  if (config.sitemaps) {
     urlsList = await fetchFromSitemap(config.sitemaps);
   }
 
