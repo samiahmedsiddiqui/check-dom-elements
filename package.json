@@ -18,6 +18,7 @@
   "private": true,
   "scripts": {
     "test:target-blank-with-wrong-attributes": "node test/list-of-target-blank-with-wrong-attributes.js",
+    "test:meta": "node test/list-of-meta.js",
     "test:meta-robots": "node test/list-of-meta-robots.js",
     "test:used-scripts": "node test/list-of-used-scripts.js"
   },
