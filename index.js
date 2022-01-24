@@ -37,7 +37,13 @@ async function checkJquery(config) {
   // Add empty line
   console.log();
 
-  Object.values(result).forEach(val => console.log(val));
+  for (const property in result) {
+    if (property === result[property]) {
+      console.log(`${result[property]}`);
+    } else {
+      console.log(`${property}: ${result[property]}`);
+    }
+  }
 
   // Add empty line
   console.log();
