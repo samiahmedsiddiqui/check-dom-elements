@@ -17,6 +17,7 @@
   "author": "Sami Ahmed Siddiqui",
   "private": true,
   "scripts": {
+    "test:absolute-urls": "node test/list-of-absolute-urls.js",
     "test:image-alt-title": "node test/list-of-image-alt-title.js",
     "test:meta": "node test/list-of-meta.js",
     "test:meta-robots": "node test/list-of-meta-robots.js",
