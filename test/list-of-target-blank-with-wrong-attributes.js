@@ -3,7 +3,7 @@
 const domElements = require('../index');
 
 domElements({
-  'test': 'target-blank-with-wrong-attributes.js',
+  'test': 'anchor/target-blank-with-wrong-attributes.js',
   'sitemaps': [
     'https://www.yasglobal.com/post-sitemap.xml',
     'https://www.yasglobal.com/page-sitemap.xml',

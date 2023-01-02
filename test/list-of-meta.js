@@ -3,7 +3,7 @@
 const domElements = require('../index');
 
 domElements({
-  'test': 'meta-tags.js',
+  'test': 'meta/tags.js',
   'urls': [
     'https://www.yasglobal.com/',
   ]

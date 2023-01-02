@@ -14,8 +14,7 @@
   "bugs": {
     "url": "https://github.com/samiahmedsiddiqui/check-dom-elements/issues"
   },
-  "author": "Sami Ahmed Siddiqui",
-  "private": true,
+  "author": "Sami Ahmed Siddiqui <sami.siddiqui@yasglobal.com> (https://www.yasglobal.com/)",
   "scripts": {
     "test:absolute-urls": "node test/list-of-absolute-urls.js",
     "test:image-alt-title": "node test/list-of-image-alt-title.js",
@@ -25,7 +24,7 @@
     "test:target-blank-with-wrong-attributes": "node test/list-of-target-blank-with-wrong-attributes.js",
     "test:used-scripts": "node test/list-of-used-scripts.js"
   },
-  "dependencies": {
+  "devDependencies": {
     "axios": "1.2.2",
     "jsdom": "20.0.3",
     "xml2js": "0.4.23"

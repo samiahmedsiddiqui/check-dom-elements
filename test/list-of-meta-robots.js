@@ -3,7 +3,7 @@
 const domElements = require('../index');
 
 domElements({
-  'test': 'meta-robots.js',
+  'test': 'meta/robots-tag.js',
   'sitemaps': [
     'https://www.yasglobal.com/post-sitemap.xml',
     'https://www.yasglobal.com/page-sitemap.xml',

@@ -3,7 +3,7 @@
 const domElements = require('../index');
 
 domElements({
-  'test': 'image-alt-title.js',
+  'test': 'image/src-alt-title.js',
   'urls': [
     'https://www.yasglobal.com/'
   ]

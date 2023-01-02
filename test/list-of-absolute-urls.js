@@ -3,7 +3,7 @@
 const domElements = require('../index');
 
 domElements({
-  'test': 'absolute-url.js',
+  'test': 'anchor/absolute-url.js',
   'urls': [
     'https://www.yugabyte.com/',
   ]
