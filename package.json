@@ -16,6 +16,7 @@
   },
   "author": "Sami Ahmed Siddiqui <sami.siddiqui@yasglobal.com> (https://www.yasglobal.com/)",
   "scripts": {
+    "build": "rm -rf lib/ && tsc",
     "lint": "eslint .",
     "lint:js": "eslint . --ext .js",
     "lint:ts": "eslint . --ext .ts",
@@ -28,6 +29,8 @@
     "test:used-scripts": "node test/list-of-used-scripts.js"
   },
   "devDependencies": {
+    "@types/jsdom": "^20.0.1",
+    "@types/xml2js": "^0.4.11",
     "@typescript-eslint/eslint-plugin": "5.47.1",
     "@typescript-eslint/parser": "5.47.1",
     "axios": "1.2.2",
