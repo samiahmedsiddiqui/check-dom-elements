@@ -16,6 +16,9 @@
   },
   "author": "Sami Ahmed Siddiqui <sami.siddiqui@yasglobal.com> (https://www.yasglobal.com/)",
   "scripts": {
+    "lint": "eslint .",
+    "lint:js": "eslint . --ext .js",
+    "lint:ts": "eslint . --ext .ts",
     "test:absolute-urls": "node test/list-of-absolute-urls.js",
     "test:image-alt-title": "node test/list-of-image-alt-title.js",
     "test:used-images": "node test/list-of-used-images.js",
@@ -25,7 +28,10 @@
     "test:used-scripts": "node test/list-of-used-scripts.js"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "5.47.1",
+    "@typescript-eslint/parser": "5.47.1",
     "axios": "1.2.2",
+    "eslint": "8.31.0",
     "jsdom": "20.0.3",
     "xml2js": "0.4.23"
   }

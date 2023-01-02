@@ -1,0 +1,10 @@
+# Set the default behavior, in case people don't have `core.autocrlf` set.
+* text=auto
+
+# Declare files that will always have LF line endings on checkout.
+*.ts text eol=lf
+
+# Remove files for archives generated using `git archive`.
+.*                     export-ignore
+appveyor.yml           export-ignore
+package-lock.json      export-ignore
