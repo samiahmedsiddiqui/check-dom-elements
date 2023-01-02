@@ -35,7 +35,7 @@ $ npm install
 
 #### List of used script(s)
 
-Update `test/list-of-used-scripts.js` with your configuration.
+Update [`test/list-of-used-scripts.js`](test/list-of-used-scripts.js) with your configuration.
 
 ```bash
 npm run test:used-scripts
@@ -45,7 +45,7 @@ npm run test:used-scripts
 
 #### List of Page URL(s) with wrong rel for target="_blank"
 
-Update `test/list-of-target-blank-with-wrong-attributes.js` with your configuration.
+Update [`test/list-of-target-blank-with-wrong-attributes.js`](test/list-of-target-blank-with-wrong-attributes.js) with your configuration.
 
 ```bash
 npm run test:target-blank-with-wrong-attributes
@@ -56,7 +56,7 @@ and `rel` has value other than `noopener`.
 
 #### Page URL(s) where absolute URL(s) are used in links
 
-Update `test/list-of-absolute-urls.js` with your configuration.
+Update [`test/list-of-absolute-urls.js`](test/list-of-absolute-urls.js) with your configuration.
 
 ```bash
 npm run test:absolute-urls
@@ -66,7 +66,7 @@ npm run test:absolute-urls
 
 #### List of image src/URL(s)
 
-Update `test/list-of-used-images.js` with your configuration.
+Update [`test/list-of-used-images.js`](test/list-of-used-images.js) with your configuration.
 
 ```bash
 npm run test:used-images
@@ -76,7 +76,7 @@ npm run test:used-images
 
 #### Meta tags used in the Page as JSON format
 
-Update `test/list-of-meta.js` with your configuration.
+Update [`test/list-of-meta.js`](test/list-of-meta.js) with your configuration.
 
 ```bash
 npm run test:meta
@@ -84,7 +84,7 @@ npm run test:meta
 
 #### Page URL(s) that has robots meta tag
 
-Update `test/list-of-meta-robots.js` with your configuration.
+Update [`test/list-of-meta-robots.js`](test/list-of-meta-robots.js) with your configuration.
 
 ```bash
 npm run test:meta-robots
