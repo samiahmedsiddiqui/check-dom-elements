@@ -5,6 +5,6 @@ const domElements = require('../index');
 domElements({
   'test': 'absolute-url.js',
   'urls': [
-    'https://www.yasglobal.com',
+    'https://www.yugabyte.com/',
   ]
 });
